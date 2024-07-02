@@ -17,7 +17,7 @@ import WorkSpacePart from '../components/WorkSpacePart.vue';
 .BodyOfHome{
   width:100%;
   height: 100vh;
-  background-image: url(../assets/Images/wallpaper.webp) ;
+  background-image: url(../assets/Images/background.webp) ;
   background-size: cover;
   display:flex;
   flex-direction: column;

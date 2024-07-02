@@ -1,32 +1,49 @@
 <script setup>
 import Projects from './lilapps/projects/Projects.vue';
+import About from './lilapps/about/About.vue';
 </script>
 
 <template>
 <div class="WorkSpacePart">
-<div class="MiniApp">
-<img src="./lilapps/Projects/icon.svg" alt="" >
+<div class="AppIcon" onclick="document.getElementById('ProjectProcess').style.display= 'flex' ">
+<img src="./lilapps/projects/icon.svg" alt="" >
 <b>Projects</b>
 </div>
-<Projects class="AppProject"/>
+<div class="AppIcon" onclick="document.getElementById('AboutProcess').style.display= 'flex' ">
+<img src="./lilapps/about/icon.svg" alt="" >
+<b>About</b>
+</div>
+<Projects class="Appprojects"/>
+<About class="Appabout"/>
 </div>
 </template>
 
 <style scoped>
 .WorkSpacePart{
- padding: 2% 0% 2% 5%;
- display:grid;
+ height: 100vh;
+ padding: 2% 0% 2% 2%;
+ display:flex;
+ flex-direction: column;
  position: relative;
+ overflow: hidden;
 }
-.MiniApp{
+.AppIcon{
  display: flex;
  width:60px;
  flex-direction: column;
  text-align: center;
+ margin:1%;
 }
-.AppProject{
- position: absolute;
- top:60%;
- left:60%
+.Appprojects{
+ position: fixed;
+ top:5%;
+ left:50%;
+ z-index:0;
+}
+.Appabout{
+ position: fixed;
+ top:5%;
+ left:50%;
+ z-index:1;
 }
 </style>
