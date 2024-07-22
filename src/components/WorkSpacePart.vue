@@ -6,11 +6,11 @@ import About from './lilapps/about/About.vue';
 <template>
 <div class="WorkSpacePart">
 <div class="AppIcon" onclick="document.getElementById('ProjectProcess').style.display= 'flex' ">
-<img src="./lilapps/projects/icon.svg" alt="" >
+<img src="./lilapps/projects/icon.svg" alt="err" >
 <b>Projects</b>
 </div>
 <div class="AppIcon" onclick="document.getElementById('AboutProcess').style.display= 'flex' ">
-<img src="./lilapps/about/icon.svg" alt="" >
+<img src="./lilapps/about/icon.svg" alt="err" >
 <b>About</b>
 </div>
 <Projects class="Appprojects"/>
@@ -24,7 +24,6 @@ import About from './lilapps/about/About.vue';
  padding: 2% 0% 2% 2%;
  display:flex;
  flex-direction: column;
- position: relative;
  overflow: hidden;
 }
 .AppIcon{
@@ -35,13 +34,13 @@ import About from './lilapps/about/About.vue';
  margin:1%;
 }
 .Appprojects{
- position: fixed;
+ position: absolute;
  top:5%;
  left:50%;
  z-index:0;
 }
 .Appabout{
- position: fixed;
+ position: absolute;
  top:5%;
  left:50%;
  z-index:1;

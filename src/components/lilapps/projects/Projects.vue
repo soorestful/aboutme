@@ -9,7 +9,7 @@
         <button class="reddot" onclick="document.getElementById('ProjectProcess').style.display= 'none' "></button>
       </div>
     </div>
-    <div class="InAppExp"></div>
+    <div class="InAppExp"><h1 align="center">empty</h1></div>
   </div>
 </template>
 

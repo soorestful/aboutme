@@ -16,7 +16,7 @@
   <div class="CenterPart"><b>/soorestful/home</b></div>
   <div class="RightPart" >
    <time>
-    2024
+    time
     </time>
    </div>
  </div>
